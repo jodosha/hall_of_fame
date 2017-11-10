@@ -1,0 +1,6 @@
+#!/bin/bash
+bundle
+bundle exec hanami db prepare
+bundle exec rake contributors:import
+
+echo done
