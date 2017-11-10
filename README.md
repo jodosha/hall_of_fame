@@ -50,6 +50,7 @@ If you use [foreman](https://github.com/ddollar/foreman) (or an alternative) run
 
 ### Manually
 
+If you don't use foreman, you can start the project manually.
 Open two terminal windows:
 
 ```shell
