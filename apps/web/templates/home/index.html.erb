@@ -1,8 +1,9 @@
+<h1 class="title">Hanami Contributors</h2>
 <div id="masonry-grid">
   <div class="gutter-sizer"></div>
   <% contributors.each do |contributor| %>
   <div class="grid-item">
-    <%= image(contributor.avatar_url, alt: contributor.username, title: contributor.username, width: "200", height: "200") %>
+    <%= avatar(contributor) %>
   </div>
   <% end %>
 </div>
