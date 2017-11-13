@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake'
+gem 'hanami-assets', git: 'https://github.com/hanami/assets.git', branch: 'enhance-push-promise'
 gem 'hanami',       '~> 1.1'
 gem 'hanami-model', '~> 1.1'
 
@@ -17,6 +18,7 @@ end
 
 group :test, :development do
   gem 'dotenv', '~> 2.0'
+  gem 'byebug', require: false
 end
 
 group :test do

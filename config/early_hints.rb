@@ -15,9 +15,14 @@ module Hanami
     private
 
     def send_early_hints(env)
+      return unless Thread.current.key?(:__hanami_assets)
+
       Thread.current[:__hanami_assets].each_slice(10) do |slice|
-        link = slice.map do |asset|
-          "<#{asset}>; rel=preload"
+        link = slice.map do |asset, options|
+          ret = %(<#{asset}>; rel=preload)
+          ret += "; as=#{options[:as]}" unless options[:as].nil?
+          ret += "; crossorigin" if options[:crossorigin]
+          ret
         end.join("\n")
 
         env["rack.early_hints"].call("Link" => link)
