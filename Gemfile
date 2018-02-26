@@ -1,14 +1,23 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'hanami-assets', git: 'https://github.com/hanami/assets.git', branch: 'enhance-push-promise'
-gem 'hanami',       '~> 1.1'
-gem 'hanami-model', '~> 1.1'
+
+gem 'hanami-utils',       require: false, git: 'https://github.com/hanami/utils.git',       branch: 'develop'
+gem 'hanami-validations', require: false, git: 'https://github.com/hanami/validations.git', branch: 'develop'
+gem 'hanami-router',      require: false, git: 'https://github.com/hanami/router.git',      branch: 'develop'
+gem 'hanami-controller',  require: false, git: 'https://github.com/hanami/controller.git',  branch: 'develop'
+gem 'hanami-view',        require: false, git: 'https://github.com/hanami/view.git',        branch: 'develop'
+gem 'hanami-helpers',     require: false, git: 'https://github.com/hanami/helpers.git',     branch: 'develop'
+gem 'hanami-mailer',      require: false, git: 'https://github.com/hanami/mailer.git',      branch: 'develop'
+gem 'hanami-cli',         require: false, git: 'https://github.com/hanami/cli.git',         branch: 'develop'
+gem 'hanami-assets',      require: false, git: 'https://github.com/hanami/assets.git',      branch: 'develop'
+gem 'hanami-model',       require: false, git: 'https://github.com/hanami/model.git',       branch: 'develop'
+gem 'hanami',                             git: 'https://github.com/hanami/hanami.git',      branch: 'feature/early-hints'
 
 gem 'sqlite3'
 gem 'request_via', require: false
 
-gem 'puma', git: 'https://github.com/puma/puma.git'
+gem 'puma'
 
 group :development do
   # Code reloading
@@ -27,5 +36,4 @@ group :test do
 end
 
 group :production do
-  # gem 'puma'
 end

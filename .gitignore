@@ -2,3 +2,5 @@
 /public/assets*
 /tmp
 /log/*
+apps/web/assets/images/*.jpg
+apps/web/assets/images/*.png

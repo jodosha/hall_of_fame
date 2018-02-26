@@ -34,6 +34,8 @@ Hanami.configure do
     delivery :test
   end
 
+  early_hints true
+
   environment :development do
     # See: http://hanamirb.org/guides/projects/logging
     logger level: :debug

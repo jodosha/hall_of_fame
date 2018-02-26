@@ -61,6 +61,42 @@ Open two terminal windows:
 % h2o -c config/h2o.conf
 ```
 
+## cURL
+
+If you want to debug the headers, please run:
+
+```shell
+% curl -i -v http://localhost:2300/
+```
+
+You should see something similar to this:
+
+```shell
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 2300 (#0)
+> GET / HTTP/1.1
+> Host: localhost:2300
+> User-Agent: curl/7.54.0
+> Accept: */*
+>
+< HTTP/1.1 103 Early Hints
+HTTP/1.1 103 Early Hints
+< Link: </assets/application.css>; rel=preload; as=style
+Link: </assets/application.css>; rel=preload; as=style
+< Link: </assets/jquery.min.js>; rel=preload; as=script
+Link: </assets/jquery.min.js>; rel=preload; as=script
+< Link: </assets/mansonry.min.js>; rel=preload; as=script
+Link: </assets/mansonry.min.js>; rel=preload; as=script
+< Link: </assets/application.js>; rel=preload; as=script
+Link: </assets/application.js>; rel=preload; as=script
+
+< HTTP/1.1 200 OK
+HTTP/1.1 200 OK
+
+# Rest of the response headers and body..
+```
+
 ## Copyright
 
-&copy; 2017 - Luca Guidi https://lucaguidi.com
+&copy; 2018 - Luca Guidi https://lucaguidi.com
