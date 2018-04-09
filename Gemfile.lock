@@ -1,117 +1,3 @@
-GIT
-  remote: https://github.com/hanami/assets.git
-  revision: 94c9c223c8f66c15611c040b79247d0d6dbad001
-  branch: develop
-  specs:
-    hanami-assets (1.2.0.beta1)
-      hanami-helpers (= 1.2.0.beta1)
-      hanami-utils (= 1.2.0.beta1)
-      tilt (~> 2.0, >= 2.0.2)
-
-GIT
-  remote: https://github.com/hanami/cli.git
-  revision: e7aba897325cc27e8b0641c91579aa5540b9a3d6
-  branch: develop
-  specs:
-    hanami-cli (0.2.0.beta1)
-      concurrent-ruby (~> 1.0)
-      hanami-utils (= 1.2.0.beta1)
-
-GIT
-  remote: https://github.com/hanami/controller.git
-  revision: 4a210a9980cfd80650d4437b0b3604ed4f296758
-  branch: develop
-  specs:
-    hanami-controller (1.2.0.beta1)
-      hanami-utils (= 1.2.0.beta1)
-      rack (~> 2.0)
-
-GIT
-  remote: https://github.com/hanami/hanami.git
-  revision: 61474ea6c5fb1e1489fa68369debb387bb08a1f0
-  branch: feature/early-hints
-  specs:
-    hanami (1.2.0.beta1)
-      bundler
-      concurrent-ruby (~> 1.0)
-      hanami-assets (= 1.2.0.beta1)
-      hanami-cli (= 0.2.0.beta1)
-      hanami-controller (= 1.2.0.beta1)
-      hanami-helpers (= 1.2.0.beta1)
-      hanami-mailer (= 1.2.0.beta1)
-      hanami-router (= 1.2.0.beta1)
-      hanami-utils (= 1.2.0.beta1)
-      hanami-validations (= 1.2.0.beta1)
-      hanami-view (= 1.2.0.beta1)
-
-GIT
-  remote: https://github.com/hanami/helpers.git
-  revision: 7eebe7ee3c35b7ff6ef64a35fa5fa097af56e97f
-  branch: develop
-  specs:
-    hanami-helpers (1.2.0.beta1)
-      hanami-utils (= 1.2.0.beta1)
-
-GIT
-  remote: https://github.com/hanami/mailer.git
-  revision: 214fc637a5b553bab9d2baf3455ee3a31a221fef
-  branch: develop
-  specs:
-    hanami-mailer (1.2.0.beta1)
-      hanami-utils (= 1.2.0.beta1)
-      mail (~> 2.6)
-      tilt (~> 2.0, >= 2.0.1)
-
-GIT
-  remote: https://github.com/hanami/model.git
-  revision: 71c90320d692f8ab395c1923c7ff2f44074a5745
-  branch: develop
-  specs:
-    hanami-model (1.2.0.beta1)
-      concurrent-ruby (~> 1.0)
-      dry-types (~> 0.11.0)
-      hanami-utils (= 1.2.0.beta1)
-      rom (~> 3.3, >= 3.3.3)
-      rom-repository (~> 1.4)
-      rom-sql (~> 1.3, >= 1.3.5)
-
-GIT
-  remote: https://github.com/hanami/router.git
-  revision: 939e895e3258405063e6fe25ef6b7af60dc73cf0
-  branch: develop
-  specs:
-    hanami-router (1.2.0.beta1)
-      hanami-utils (= 1.2.0.beta1)
-      http_router (= 0.11.2)
-      rack (~> 2.0)
-
-GIT
-  remote: https://github.com/hanami/utils.git
-  revision: 54ce0fed33d625ec32965ba1d5b16693c7e86a29
-  branch: develop
-  specs:
-    hanami-utils (1.2.0.beta1)
-      concurrent-ruby (~> 1.0)
-      transproc (~> 1.0)
-
-GIT
-  remote: https://github.com/hanami/validations.git
-  revision: 14eb364dc5461580a3d84e7298c760e5e2323670
-  branch: develop
-  specs:
-    hanami-validations (1.2.0.beta1)
-      dry-validation (~> 0.11)
-      hanami-utils (= 1.2.0.beta1)
-
-GIT
-  remote: https://github.com/hanami/view.git
-  revision: 7ab31f53eec6a49616f53832547f9ea166dc1d61
-  branch: develop
-  specs:
-    hanami-view (1.2.0.beta1)
-      hanami-utils (= 1.2.0.beta1)
-      tilt (~> 2.0, >= 2.0.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -132,7 +18,7 @@ GEM
     dry-container (0.6.0)
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1, >= 0.1.3)
-    dry-core (0.4.4)
+    dry-core (0.4.5)
       concurrent-ruby (~> 1.0)
     dry-equalizer (0.2.0)
     dry-initializer (1.4.1)
@@ -161,6 +47,54 @@ GEM
       dry-equalizer (~> 0.2)
       dry-logic (~> 0.4, >= 0.4.0)
       dry-types (~> 0.11.0)
+    hanami (1.2.0.rc2)
+      bundler
+      concurrent-ruby (~> 1.0)
+      hanami-assets (= 1.2.0.rc2)
+      hanami-cli (= 0.2.0.rc2)
+      hanami-controller (= 1.2.0.rc2)
+      hanami-helpers (= 1.2.0.rc2)
+      hanami-mailer (= 1.2.0.rc2)
+      hanami-router (= 1.2.0.rc2)
+      hanami-utils (= 1.2.0.rc2)
+      hanami-validations (= 1.2.0.rc2)
+      hanami-view (= 1.2.0.rc2)
+    hanami-assets (1.2.0.rc2)
+      hanami-helpers (= 1.2.0.rc2)
+      hanami-utils (= 1.2.0.rc2)
+      tilt (~> 2.0, >= 2.0.2)
+    hanami-cli (0.2.0.rc2)
+      concurrent-ruby (~> 1.0)
+      hanami-utils (= 1.2.0.rc2)
+    hanami-controller (1.2.0.rc2)
+      hanami-utils (= 1.2.0.rc2)
+      rack (~> 2.0)
+    hanami-helpers (1.2.0.rc2)
+      hanami-utils (= 1.2.0.rc2)
+    hanami-mailer (1.2.0.rc2)
+      hanami-utils (= 1.2.0.rc2)
+      mail (~> 2.6)
+      tilt (~> 2.0, >= 2.0.1)
+    hanami-model (1.2.0.rc2)
+      concurrent-ruby (~> 1.0)
+      dry-types (~> 0.11.0)
+      hanami-utils (= 1.2.0.rc2)
+      rom (~> 3.3, >= 3.3.3)
+      rom-repository (~> 1.4)
+      rom-sql (~> 1.3, >= 1.3.5)
+    hanami-router (1.2.0.rc2)
+      hanami-utils (= 1.2.0.rc2)
+      http_router (= 0.11.2)
+      rack (~> 2.0)
+    hanami-utils (1.2.0.rc2)
+      concurrent-ruby (~> 1.0)
+      transproc (~> 1.0)
+    hanami-validations (1.2.0.rc2)
+      dry-validation (~> 0.11)
+      hanami-utils (= 1.2.0.rc2)
+    hanami-view (1.2.0.rc2)
+      hanami-utils (= 1.2.0.rc2)
+      tilt (~> 2.0, >= 2.0.1)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -220,17 +154,17 @@ DEPENDENCIES
   byebug
   capybara
   dotenv (~> 2.0)
-  hanami!
-  hanami-assets!
-  hanami-cli!
-  hanami-controller!
-  hanami-helpers!
-  hanami-mailer!
-  hanami-model!
-  hanami-router!
-  hanami-utils!
-  hanami-validations!
-  hanami-view!
+  hanami (~> 1.2.0.rc2)
+  hanami-assets (~> 1.2.0.rc2)
+  hanami-cli (~> 0.2.0.rc2)
+  hanami-controller (~> 1.2.0.rc2)
+  hanami-helpers (~> 1.2.0.rc2)
+  hanami-mailer (~> 1.2.0.rc2)
+  hanami-model (~> 1.2.0.rc2)
+  hanami-router (~> 1.2.0.rc2)
+  hanami-utils (~> 1.2.0.rc2)
+  hanami-validations (~> 1.2.0.rc2)
+  hanami-view (~> 1.2.0.rc2)
   minitest
   puma
   rake

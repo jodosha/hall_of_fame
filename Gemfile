@@ -1,39 +1,38 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'rake'
+source "https://rubygems.org"
 
-gem 'hanami-utils',       require: false, git: 'https://github.com/hanami/utils.git',       branch: 'develop'
-gem 'hanami-validations', require: false, git: 'https://github.com/hanami/validations.git', branch: 'develop'
-gem 'hanami-router',      require: false, git: 'https://github.com/hanami/router.git',      branch: 'develop'
-gem 'hanami-controller',  require: false, git: 'https://github.com/hanami/controller.git',  branch: 'develop'
-gem 'hanami-view',        require: false, git: 'https://github.com/hanami/view.git',        branch: 'develop'
-gem 'hanami-helpers',     require: false, git: 'https://github.com/hanami/helpers.git',     branch: 'develop'
-gem 'hanami-mailer',      require: false, git: 'https://github.com/hanami/mailer.git',      branch: 'develop'
-gem 'hanami-cli',         require: false, git: 'https://github.com/hanami/cli.git',         branch: 'develop'
-gem 'hanami-assets',      require: false, git: 'https://github.com/hanami/assets.git',      branch: 'develop'
-gem 'hanami-model',       require: false, git: 'https://github.com/hanami/model.git',       branch: 'develop'
-gem 'hanami',                             git: 'https://github.com/hanami/hanami.git',      branch: 'feature/early-hints'
+gem "rake"
 
-gem 'sqlite3'
-gem 'request_via', require: false
+gem "hanami-utils",       "~> 1.2.0.rc2"
+gem "hanami-validations", "~> 1.2.0.rc2"
+gem "hanami-router",      "~> 1.2.0.rc2"
+gem "hanami-controller",  "~> 1.2.0.rc2"
+gem "hanami-view",        "~> 1.2.0.rc2"
+gem "hanami-helpers",     "~> 1.2.0.rc2"
+gem "hanami-mailer",      "~> 1.2.0.rc2"
+gem "hanami-cli",         "~> 0.2.0.rc2"
+gem "hanami-assets",      "~> 1.2.0.rc2"
+gem "hanami-model",       "~> 1.2.0.rc2"
+gem "hanami",             "~> 1.2.0.rc2"
 
-gem 'puma'
+gem "sqlite3"
+gem "request_via", require: false
+
+gem "puma"
 
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading
-  gem 'shotgun'
+  gem "shotgun"
 end
 
 group :test, :development do
-  gem 'dotenv', '~> 2.0'
-  gem 'byebug', require: false
+  gem "dotenv", "~> 2.0"
+  gem "byebug", require: false
 end
 
 group :test do
-  gem 'minitest'
-  gem 'capybara'
-end
-
-group :production do
+  gem "minitest"
+  gem "capybara"
 end
