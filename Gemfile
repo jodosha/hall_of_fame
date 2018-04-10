@@ -8,7 +8,7 @@ gem "hanami-utils",       "~> 1.2.0.rc2"
 gem "hanami-validations", "~> 1.2.0.rc2"
 gem "hanami-router",      "~> 1.2.0.rc2"
 gem "hanami-controller",  "~> 1.2.0.rc2"
-gem "hanami-view",        "~> 1.2.0.rc2"
+gem "hanami-view", git: "https://github.com/hanami/view.git", branch: "develop"
 gem "hanami-helpers",     "~> 1.2.0.rc2"
 gem "hanami-mailer",      "~> 1.2.0.rc2"
 gem "hanami-cli",         "~> 0.2.0.rc2"
@@ -29,7 +29,6 @@ end
 
 group :test, :development do
   gem "dotenv", "~> 2.0"
-  gem "byebug", require: false
 end
 
 group :test do
