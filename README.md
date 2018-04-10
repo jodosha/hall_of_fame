@@ -82,6 +82,8 @@ You should see something similar to this:
 >
 < HTTP/1.1 103 Early Hints
 HTTP/1.1 103 Early Hints
+< Link: </assets/hanami.png>; rel=preload; as=image
+Link: </assets/hanami.png>; rel=preload; as=image
 < Link: </assets/application.css>; rel=preload; as=style
 Link: </assets/application.css>; rel=preload; as=style
 < Link: </assets/jquery.min.js>; rel=preload; as=script
