@@ -6,6 +6,6 @@ describe Web::Views::ApplicationLayout do
   let(:template) { Hanami::View::Template.new('apps/web/templates/application.html.erb') }
 
   it 'contains application name' do
-    rendered.must_include('Web')
+    rendered.must_include('Hanami | Hall of Fame')
   end
 end
